@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET home page. */
 router.get("/", function (req, res, next) {
   res.render("index", {
-    title: "Northwest Hosting - Datacenter Solutions",
+    title: "images altfenix",
     routename: "home",
     csrfToken: req.csrfToken()
   });
