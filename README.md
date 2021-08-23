@@ -1,20 +1,28 @@
-# WV Website
+# nft
+
+Requires:
+
+Install Node:
 
 ```
-git clone https://github.com/willemsventures/website
-cd website
-yarn install
-node willems.js
+curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
+sudo apt-get install -y nodejs
 ```
 
-for live editing use "pm2 start willems.js --watch" instead of "node willems.js".
+Install PM2
 
 ```
-pm2 start app.js --watch
+npm install -g pm2
 ```
 
-Website visible at "https://localhost:8080"
+Install packages
 
-Under development.
+```
+npm install
+```
 
-# website
+Start the program:
+
+```
+pm2 start nft
+```

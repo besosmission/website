@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-<html class="" lang="en">
-{% include './blocks/head.twig' %}
+{% extends 'layout.twig' %}
 
-<body>
-    <div class="wrapper vcard">
-        {% include './blocks/pageloader.twig' %}
-        {% include './blocks/navbar.twig' %}
-        <div class="main-content">
+{% block body %}
 
-        </div>
-        {% include './blocks/footer.twig' %}
-    </div>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+	{% include './blocks/navbar.twig' %}
+
+	<div class="alert alert-error" style="margin-top:50px;">
+		<button type="button" class="close" data-dismiss="alert">×</button>
+		Nothing to see here buddy.
+	</div>
+
+
+	{% include './blocks/footer.twig' %}
 </body>
 
-</html>
+{% endblock %}

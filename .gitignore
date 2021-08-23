@@ -1,6 +1,12 @@
-node_modules/**/*
-web-build/
-web-report/
+# Dependency directories
+node_modules
 
-# macOS
-.DS_Store
+# database dir
+db/
+
+# Optional npm cache directory
+.npm
+
+# Package lock and temp files
+.package.json
+package-lock.json
