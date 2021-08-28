@@ -2,16 +2,112 @@
 
 {% block body %}
 
-<body data-spy="scroll" data-target=".bs-docs-sidebar">
-	{% include './blocks/navbar.twig' %}
+<body>
+	{% include './blocks/header.twig' %}
 
-	<div class="alert alert-error" style="margin-top:50px;">
-		<button type="button" class="close" data-dismiss="alert">×</button>
-		Nothing to see here buddy.
+	<div class="container mt-5">
+		<div class="text-center">
+			<p class="headline1 mb-0">Welcome to the Besos Mission</p>
+			<h1 class="headline-alert">We Are Finally Going To Space</h1>
+			<div class="row">
+				<div class="col-12 col-md-10 offset-md-1">
+					<p class="headline2">
+						We are going to give Jeff Besos a helping hand and bring the New Shepard into space!<br>
+						Launching from the Northwest Facility in Junsele, Sweden.<br>
+						A powerful weatherballoon, capable of lifting a payload of 2000 grams!<br>
+						Keep on reading to learn more about our mission!
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="jumbotron jumbotron-fluid mt-5 py-4">
+			<div class="container">
+				<h2 class="h1">Mission Objective</h2>
+				<ul>
+					<li>Create a friendly mission together with the Space Community for Jeff Besos.</li>
+					<li>Help Jeff Besos getting his rocket toys in to space.</li>
+					<li>Have Jeff Besos focus less on lawsuits.</li>
+					<li>Distract Jeff Besos from SpaceX missions.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row row-cols-1 row-cols-md-2">
+			<div class="col">
+				<div class="jumbotron jumbotron-fluid py-4">
+					<div class="container">
+						<h3 class="h3">The Payload</h3>
+						<ul>
+							<li>Blue Origin New Shepard - <strong><a target="_blank"
+										href="https://shop.blueorigin.com/collections/accessories/products/the-estes-new-shepard">Click
+										here for more information</a></strong></li>
+							<li>2x GoPro Hero 9 Black Edition to capture the historical moment!</li>
+							<li>Specialized GPS and Communication Equipment to recover the payload</li>
+							<li>A physical DogeCoin (Because.. why not?)</li>
+						</ul>
+						<h3 class="h3">The Launch Vehicle</h3>
+						<p>A Pawan CPR-2000 Meteorological Balloon made in India.<br>
+							The balloon was purchased for another mission 2 years ago and the equipment was laying in a
+							dusty basement. We believe the launch vehicle is still in great shape to realize this
+							mission.</p>
+						<h3 class="h3">Launch Window</h3>
+						<ul>
+							<li>December 2021</li>
+							<p>Exact Date TBA</p>
+						</ul>
+						<h3 class="h3">How can you help us?</h3>
+						<p>Keep any eye on this page or join our discord until we release more and more content and
+							updates. Soon, we will be posting updates about the project and the journey to our goal of a
+							succesful space mission.</p>
+					</div>
+				</div>
+				<div class="jumbotron jumbotron-fluid py-4">
+					<div class="container">
+						<h3 class="h3">I want to help!</h3>
+						<p>The Besos Mission is a community driven project. <br>Any help or potential collaboration is
+							always
+							appreciated. <br>We are specifically looking for social media contributors and managers.
+							<br>nyone
+							willing to provide something specific or technical to the mission is always welcome.
+							<br>Join us on Discord to learn more!<br><br>
+							<a href="https://discord.gg/SNMrV8mtpz" target="_blank"><button
+									class="btn btn-highlight">Join Discord</button></a>
+						</p>
+						<h3 class="h3">About Us</h3>
+						<p>The Besos Mission is a joined collaboration between <br><a href="https://qredit.io"
+								target="_blank"><strong>Qredit</strong></a> and <a href="https://northwest-hosting.com"
+								target="_blank"><strong>Northwest
+									Hosting</strong></a>.</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="col">
+				<div class="jumbotron jumbotron-fluid py-4">
+					<div class="container">
+						<h3 class="h3 text-center">Blue Origin</h3>
+						<h4 class="headline3 text-center">New Shepard</h4>
+						<div class="card h-100"
+							style="background-image: url(&quot;assets/media/dildorocket.png&quot;); background-size: cover; background-position: center center;">
+							<img src="assets/media/dildorocket.png" class="card-img-top convert-to-bg"
+								alt="Carina Nebula captured by the Hubble Space Telescope" style="visibility: hidden;">
+						</div>
+						<p class="text-center">The Estes New Shepard is a 1/66th scale model of the Blue Origin New
+							Shepard launch vehicle.<br>
+							It flies to altitude on a
+							C6-3 or C6-5 engine and is capable of reaching as high as 400 feet. <br>Similar to the
+							original
+							New Shepard rocket, this
+							rocket is payload capable and the capsule separates from the booster – and you can fly it
+							again and again.</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
+	<button id="back-to-top" class="btn btn-highlight" role="button">
+		<span class="fa fa-chevron-up"></span>
+	</button>
 
-	{% include './blocks/footer.twig' %}
-</body>
-
-{% endblock %}
+	{% endblock %}
